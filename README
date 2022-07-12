@@ -1,4 +1,3 @@
-
 # Mapillary_Annotation
 Using the API of the crowdsourcing platform Mapillary, we automatically download all available street-level images over the area of interest in the Netherlands for the year of 2017. Then, each downloaded image is matched with the corresponding LPIS object(s) it illustrates. We annotate images that are taken either towards the windshield direction (Case 1) or the window direction (Case 2).
 We move the initial geo-location coordinates `(lat1, lon1)` to new coordinates `(lat2, lon2)` that are `d = 10m` away in the direction of angle θ.
@@ -18,4 +17,46 @@ We move the initial geo-location coordinates `(lat1, lon1)` to new coordinates `
 | **`Total`** | **45581** | 
 
 link: https://github.com/Agri-Hub/Mapillary_Annotation
+
+# Space2Ground Dataset
+Space2Ground is a multi-level, multi-sensor, multi-modal dataset, annotated with grassland/non-grassland labels for agriculture monitoring. We combine Sentinel-1 SAR data, Sentinel-2 multispectral data and street-level images for the purpose of grassland detection.
+Only two classes: grassland or not
+link: https://github.com/Agri-Hub/Space2Ground
+
+# Paddy Rice Labeling Sites in South Korea (2018)
+The paddy rice was visually interpreted at 30 sites in South Korea. The sites were selected at each province by a proportional stratified sampling method according to the paddy rice area statistics (Statistics Korea), so the dataset can be used for the validation on model generalization over the entire country. The paddy rice areas were visually interpreted by using Google Earth Pro and street view services (https://map.naver.com, https://map.kakao.com) and updated to the state of 2018.
+link: https://zenodo.org/record/5846018#.Ys1CoHZBxmM
+
+# CropHarvest
+CropHarvest is an open source remote sensing dataset for agriculture with benchmarks. It collects data from a variety of agricultural land use datasets and remote sensing products.
+The dataset consists of 90,480 datapoints, of which 30,899 (34.2%) have multiclass labels. All other datapoints only have binary crop / non-crop labels.
+The datasets include 3 different types of labels: i) binary labels (crop/non crop) ii) FAO’s indicative crop classification labels, whcih resulted to 9 crop type groupings: cereals, vegetables and melons, fruits and nuts, oilseed crops, root/tuber crops, beverage and spice crops, leguminous crops, sugar crops, and other crops iii) crop-type labels, if available.
+https://github.com/nasaharvest/cropharvest/blob/main/diagrams/labels_spatial_distribution.png?raw=true
+
+| Source      | Area of Focus | Number of labels used | Label Type | License  |
+|-------------|---------------|----------------------:|------------|----------|
+|NASA Harvest | Rwanda        | 3,600                 | Binary     | CC BY-4.0|
+|NASA Harvest | Kenya         | 2,704                 | Binary     | CC BY-4.0|
+|NASA Harvest | Ethiopia      | 830                   | Binary     | CC BY-4.0|
+|NASA Harvest | Sudan         | 422                   | Binary     | CC BY-4.0|
+|NASA Harvest | Mali          | 142                   | Binary     | CC BY-4.0|
+|NASA Harvest | Brazil        | 36                    | Binary     | CC BY-4.0|
+|[[1]](#1)    | Togo          | 1,582                 | Binary     | CC BY-4.0|
+|[[2]](#2)| France (Ile de France) | 6,184 |Multi-class| etalab Open License |
+|[[2]](#2)| France (Reunion) | 2,776       |Multi-class| etalab Open License |
+|[[2]](#2)| France (Martinique) | 2,421    |Multi-class| etalab Open License |
+|[[3]](#3)| Global            | 35,866                | Binary     | CC BY-3.0|
+|[[4]](#4)| Global            | 14,976                | Multi-class| LP DAAC  |
+|[[5]](#5)| Canada            | 9,088  | Multi-class| Open Government License |
+|[[6]](#6)| Uzbekistan, Tajikistan | 5,302            | Multi-class| CC BY-4.0|
+|[[7]](#7)| Germany           | 2,550             | Multi-class| DL-DE->BY-2.0|
+|[[8]](#8)| Brazil            | 800                   | Multi-class| CC BY-4.0|
+|[[9]](#9)| Tanzania          | 392                   | Multi-class| CC BY-4.0|
+|[[10]](#10)| Kenya           | 319                | Multi-class| CC BY-SA-4.0|
+|[[11]](#11)| Uganda          | 233                   | Multi-class| CC BY-4.0|
+| Harvest Partner | Mali      | 148                   | Multi-class| CC BY-4.0|
+| FEWS NET| Zimbabwe          | 49                 | Multi-class| CC BY-SA-4.0|
+
+link: https://github.com/nasaharvest/cropharvest
+
 
