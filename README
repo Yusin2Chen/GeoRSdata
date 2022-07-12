@@ -1,1 +1,21 @@
 
+# Mapillary_Annotation
+Using the API of the crowdsourcing platform Mapillary, we automatically download all available street-level images over the area of interest in the Netherlands for the year of 2017. Then, each downloaded image is matched with the corresponding LPIS object(s) it illustrates. We annotate images that are taken either towards the windshield direction (Case 1) or the window direction (Case 2).
+We move the initial geo-location coordinates `(lat1, lon1)` to new coordinates `(lat2, lon2)` that are `d = 10m` away in the direction of angle θ.
+
+#### Distribution of Labels
+
+| Label | Count |
+| --- | --- | 
+| `Grassland` | 40220 | 
+| `Maize` | 4783 | 
+| `Potatos` | 297 | 
+| `Winter Wheat` | 127 |
+| `Sumer Barley` | 56 | 
+| `Sugar Beet` | 36 | 
+| `Rice` | 33 | 
+| `Onions` | 29 | 
+| **`Total`** | **45581** | 
+
+link: https://github.com/Agri-Hub/Mapillary_Annotation
+
